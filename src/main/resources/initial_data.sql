@@ -1,1 +1,1 @@
-INSERT INTO hero();
+INSERT INTO hero (brand, costume, height, name, origin, weight) VALUES ('Superman', 'http://vignette3.wikia.nocookie.net/marvel_dc/images/a/af/Superman_0036.jpg/revision/latest?cb=20140118213838', 75, 'Clark Kent', 'space mans', 235);
