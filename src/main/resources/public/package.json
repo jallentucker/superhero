@@ -1,0 +1,11 @@
+{
+	"name": "superhero",
+	"version": "1.0.0",
+	"description": "superhero",
+	"author": "jtucker@catalystdevworks.com",
+	"license": "MIT",
+	"devDependencies": {
+		"angular": "*",
+		"angular-ui-router": "*"
+	}
+}
