@@ -7,6 +7,7 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.catalyst.superhero.daos.HeroDao;
 import com.catalyst.superhero.entities.Hero;
@@ -16,8 +17,10 @@ public class HeroData implements HeroDao{
 	@PersistenceContext
 	private EntityManager em;
 
+	@Override
 	public List<Hero> getAllHeroes() {
-		
+		return em.createQuery("SELECT h FROM hero h", Hero.class)
+			.getResultList();
 	}
 
 	public void setEm(EntityManager em) {
